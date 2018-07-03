@@ -6,13 +6,13 @@ Pod::Spec.new do |s|
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.author = { "Oleksii Dykan" => "alick_bass@mail.ru" }
   
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "10.0"
   s.osx.deployment_target = "10.11"
   s.watchos.deployment_target = "2.0"
   s.tvos.deployment_target = "9.0"
   s.requires_arc = true
 
-  s.source = { :git => "https://github.com/alickbass/SweetRouter.git", :tag => s.version, :branch => 'master'}
+  s.source = { :git => "https://github.com/antons81/SweetRouter.git", :tag => s.version, :branch => 'master'}
   s.source_files = "SweetRouter/*.swift"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4' }
 

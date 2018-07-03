@@ -29,7 +29,7 @@ extension IP {
             let intComponents = components.lazy.map({ $0.components(separatedBy: ":").map({ UInt16($0, radix: 16) }) })
             let intComponentsCount = intComponents.reduce(0, { $0 + $1.count })
             guard intComponentsCount <= numberOfQuarters else { return nil }
-            let flattenedComponents = intComponents.map({ $0.flatMap({ $0 }) })
+            let flattenedComponents = intComponents.map({ $0.compactMap({ $0 }) })
             guard flattenedComponents.reduce(0, { $0 + $1.count }) == intComponentsCount else { return nil }
             var result: [UInt16] = Array(repeating: 0, count: numberOfQuarters)
             func updateValues(from array: [UInt16], start: Int) {

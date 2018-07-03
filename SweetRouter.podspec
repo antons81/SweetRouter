@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "SweetRouter"
-  s.version = "1.0.0"
+  s.version = "1.0.1"
   s.summary = "Declarative URL routing in swift for Alamofire and not only :)"
   s.homepage = "https://github.com/alickbass/SweetRouter"
   s.license = { :type => "MIT", :file => "LICENSE" }
